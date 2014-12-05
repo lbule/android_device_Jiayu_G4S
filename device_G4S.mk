@@ -19,13 +19,7 @@ PRODUCT_COPY_FILES += \
 
 # recovery
 PRODUCT_COPY_FILES += \
-    device/THL/T100S/recovery/factory_init.project.rc:recovery/root/factory_init.project.rc \
-    device/THL/T100S/recovery/factory_init.rc:recovery/root/factory_init.rc \
-    device/THL/T100S/recovery/fstab:recovery/root/fstab \
-    device/THL/T100S/recovery/meta_init.modem.rc:recovery/root/meta_init.modem.rc \
-    device/THL/T100S/recovery/meta_init.project.rc:recovery/root/meta_init.project.rc \
-    device/THL/T100S/recovery/meta_init.rc:recovery/root/meta_init.rc \
-    device/THL/T100S/recovery/ueventd.rc:recovery/root/ueventd.rc
+    $(LOCAL_PATH)/recovery/fstab:recovery/root/fstab
 
 $(call inherit-product, build/target/product/full.mk)
 
